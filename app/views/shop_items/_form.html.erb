@@ -1,0 +1,4 @@
+<%= form_for([@shop_list, @shop_list.shop_items.build]) do |f| %>
+    <%= f.text_field :name, placeholder: "Add New Item" %>
+    <%= f.submit %>
+<% end %>
