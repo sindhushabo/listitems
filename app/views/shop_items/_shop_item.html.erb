@@ -1,2 +1,2 @@
-<p><%= shop_item.name %></p>
-<%= link_to "Delete", shop_list_shop_item_path(@shop_list, shop_item.id), method: :delete, data: {confirm: "Do you want to delete the item?"}  %>
+<td><%= shop_item.name %></td>
+<td><%= link_to "Delete", shop_list_shop_item_path(@shop_list, shop_item.id), method: :delete, data: {confirm: "Do you want to delete the item?"} , :class=>"action-button red" %></td>

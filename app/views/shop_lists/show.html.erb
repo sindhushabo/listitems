@@ -1,21 +1,26 @@
 <p id="notice"><%= notice %></p>
-
+<table>
+  <thead>
 <p>
   <strong>Title:</strong>
   <%= @shop_list.title %>
 </p>
-
 <p>
   <strong>Description:</strong>
   <%= @shop_list.description %>
 </p>
+  </thead>
 
+  <tbody>
+  <tr>
 <div id="shop_items_wrapper">
   <%= render @shop_list.shop_items %>
   <div id="form">
     <%= render 'shop_items/form' %>
   </div>
 </div>
-
-<%= link_to 'Edit', edit_shop_list_path(@shop_list) %> |
-<%= link_to 'Back', shop_lists_path %>
+</tr>
+  </tbody>
+  </table>
+<%= link_to 'Edit', edit_shop_list_path(@shop_list) , :class=>"action-button blue"%>
+<%= link_to 'Back', shop_lists_path, :class=>"action-button yellow" %>
