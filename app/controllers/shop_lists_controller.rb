@@ -12,6 +12,9 @@ class ShopListsController < ApplicationController
   def show
   end
 
+  def contact
+
+  end
   # GET /shop_lists/new
   def new
     @shop_list = ShopList.new
